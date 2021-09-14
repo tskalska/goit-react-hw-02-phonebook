@@ -21,6 +21,11 @@ class Form extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.onSubmit(this.state);
+    this.setState ({
+      name: '',
+      number: '',
+    });
+    event.target.reset();
   }
 
   render(){

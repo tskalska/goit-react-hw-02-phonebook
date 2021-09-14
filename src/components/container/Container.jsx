@@ -29,7 +29,7 @@ export default function Container({name,tel,handleChange,handleSubmit,nemeInputI
           required
           onChange={handleChange}
           className = {styles.formInput}
-          id={{numberInputId}}>
+          id={numberInputId}>
             {tel}
         </input>
       </label>
